@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewpart" content="width=device-width, initial-scale=1">
+        <title>Robot</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+        <style>
+            html, body { margin: 0; padding: 0; background-color: "red"}
+            canvas { display: block; }
+        </style>
+
+        <script>
+
+        function setup()
+        {
+          createCanvas(400, 400);
+        }
+        function draw()
+        {
+            background(220);
+  fill("#fae");
+  square(mouseX - 25, mouseY - 20, 50);
+  fill(0);
+  circle(mouseX - 10, mouseY - 10, 5);
+  circle(mouseX + 10, mouseY - 10, 5);
+  square(mouseX - 2, mouseY, 5);
+  fill(355,0,0);
+  circle(mouseX , mouseY + 15, 10);
+  fill(0,0,255);
+  line(mouseX - 20, mouseY - 20, mouseX - 20, mouseY - 40);
+  fill(0,0,255);
+  line(mouseX + 20, mouseY - 40, mouseX + 20, mouseY - 20);
+  fill(0,0,255);
+  circle(mouseX - 20, mouseY - 40, 5);
+  circle(mouseX + 20, mouseY - 40, 5);
+  fill(200,250,0);
+  rect(mouseX - 8, mouseY + 30, 15, 20);
+  fill("#fae");
+  rect(mouseX - 29, mouseY + 50, 60, 90);
+  fill("#fae");
+  rect(mouseX - 100, mouseY + 60, 70, 20);
+  rect(mouseX + 31, mouseY + 60, 70, 20);
+  rect(mouseX - 30, mouseY + 140, 20, 70);
+  rect(mouseX + 12, mouseY + 140, 20, 70);
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Robot</h1>
+    </body>
+<html>
