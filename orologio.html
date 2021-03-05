@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <meta charset= "utf-8">
+        <meta name="viewpart" content="width=device-width, initial-scale=1">
+        <title>Orologio</title>
+
+        <!--Metadati di p5.js-->
+        <script src=" "></script>
+        <style>
+            html, body { margin: 0; padding: 0; background-color: "red"}
+            canvas { display: block; }
+        </style>
+
+        <script>
+            function setup()let img;
+
+function setup() {
+  createCanvas(528, 527);
+  angleMode(DEGREES);
+  img = loadImage('orologio 2050.png');
+}
+
+function draw() {
+  background(220)
+  image(img, 0, 0);
+  var h = new Date().getHours();
+  var m = new Date().getMinutes();
+  var s = new Date().getSeconds();
+  text(h, 160, 180);
+  text(m, 190, 180);
+  text(s, 220, 180);
+  
+  fill(0, 0, 0);
+  circle(265, 265, 330);
+  
+  fill(0, 0, 255);
+  arc(265, 265, 330, 330, 270, s);
+  
+  fill(0, 255, 0);
+  arc(265, 265, 320, 320, 270, m);
+  
+  fill(255, 0, 0);
+  arc(265, 265, 310, 310, 270, h+1);
+}
+        </script>
+    </head>
+    <body>
+        <h1>Orologio</h1>
+    </body>
+<html>
